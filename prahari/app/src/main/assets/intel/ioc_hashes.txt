@@ -1,0 +1,17 @@
+# Prahari — offline IOC hash list (APK / base-DEX SHA-256)
+#
+# Format: one lowercase SHA-256 per line. An optional label may follow, separated by spaces:
+#     <64-hex-sha256>  short label
+# Blank lines and lines starting with '#' are ignored. The engine matches the APK's SHA-256
+# exactly and (on a hit) forces the app to Critical.
+#
+# THIS FILE SHIPS WITH NO REAL-MALWARE HASHES.
+#   - The hackathon forbids real malware, and fabricating "known-bad" hashes would be dishonest.
+#   - Populate it truthfully in one of two ways:
+#       1) Your own inert fixtures  -> run tools/populate_ioc.ps1 after building test-fixtures/.
+#          These become planted, clearly-labelled demo samples so the hash-match path is live.
+#       2) Publicly published IOC hash lists (hashes are not malware) -> paste them below.
+#
+# The line below is ONLY to illustrate the 64-hex format. It is the SHA-256 of an EMPTY input
+# and is NOT an indicator — it stays commented out.
+# e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  (format example, not an IOC)

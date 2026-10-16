@@ -1,0 +1,5 @@
+<resources>
+    <!-- Platform Material theme (API 21+), so the spike needs no extra theme dependency.
+         Compose draws its own Material 3 surfaces on top. -->
+    <style name="Theme.AppRiskSpike" parent="@android:style/Theme.Material.Light.NoActionBar" />
+</resources>

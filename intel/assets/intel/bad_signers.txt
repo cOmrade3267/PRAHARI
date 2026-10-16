@@ -1,0 +1,17 @@
+# Prahari — offline bad-signer list (signing-certificate SHA-256)
+#
+# Format: one lowercase SHA-256 of a signing certificate per line, optional label after spaces.
+# The engine matches PackageInfo.signingInfo's cert SHA-256 exactly and (on a hit) forces Critical.
+# Useful because dropper families reuse one signing key across many repackaged apps.
+#
+# THIS FILE SHIPS EMPTY OF REAL ENTRIES — same honesty rule as ioc_hashes.txt.
+#   - Add a signer SHA-256 only when you can attribute it truthfully (e.g. your own fixtures via
+#     tools/populate_ioc.ps1, or a publicly published signer IOC).
+#
+# NOTE: to flag DEBUG-SIGNED apps (a legitimate static signal — a production app signed with the
+# Android debug key), do NOT hardcode a hash here (the debug key differs per machine). Instead the
+# RE engine should check the signer certificate's subject for CN="Android Debug" and emit a
+# flag.debug_signed token. This list is for exact known-bad certs only.
+#
+# Format example only (SHA-256 of an empty input, NOT a real signer) — stays commented out:
+# e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  (format example, not an IOC)

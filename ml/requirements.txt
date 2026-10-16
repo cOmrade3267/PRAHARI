@@ -1,0 +1,8 @@
+# Training-only deps (run on your machine; the phone needs none of these).
+# Python 3.10–3.12 recommended. On Windows, pip installs the CPU TensorFlow build — fine for this
+# tiny model.
+tensorflow>=2.15,<2.18
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.24
+ucimlrepo>=0.0.7

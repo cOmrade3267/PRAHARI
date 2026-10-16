@@ -1,0 +1,10 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+**/build/
+/captures/
+# Drop the trained model here (not committed):
+app/src/main/assets/ml/model.tflite
+app/src/main/assets/ml/features.json

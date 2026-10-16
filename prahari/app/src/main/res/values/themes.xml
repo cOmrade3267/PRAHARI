@@ -1,0 +1,4 @@
+<resources>
+    <!-- Base theme; Compose Material 3 draws the real UI. NoActionBar + edge-to-edge friendly. -->
+    <style name="Theme.Prahari" parent="@android:style/Theme.Material.Light.NoActionBar" />
+</resources>
